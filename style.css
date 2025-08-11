@@ -41,6 +41,19 @@ header h1 {
     background-clip: text;
 }
 
+.unofficial {
+    font-size: 0.4em;
+    color: #ff6b6b;
+    font-weight: 400;
+    background: none;
+    -webkit-text-fill-color: #ff6b6b;
+    opacity: 0.8;
+    text-transform: lowercase;
+    font-style: italic;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
 header p {
     font-size: 1.1em;
     opacity: 0.8;
