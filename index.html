@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Checker - Rampage Rally</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Video Checker - Rampage Rally</h1>
+            <p>Verify if your animation meets the contest requirements</p>
+        </header>
+
+        <div class="privacy-notice">
+            <div class="privacy-content">
+                <h3>🔒 Privacy & Security Notice</h3>
+                <p><strong>Your videos are NOT saved or stored on our server.</strong></p>
+                <p>Videos are processed in memory and immediately deleted after analysis. If you don't trust this process, simply don't upload your video.</p>
+            </div>
+        </div>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-content">
+                <div class="upload-icon">📁</div>
+                <h3>Drag & drop your video here</h3>
+                <p>or click to select</p>
+                <input type="file" id="fileInput" accept="video/mp4,video/quicktime,.mov,.mp4" hidden>
+            </div>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>🔍 Verification Results</h2>
+            <div class="validation-table" id="validationTable"></div>
+            <div class="video-details" id="videoDetails"></div>
+            <button class="reset-btn" id="resetBtn">Check Another Video</button>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing video...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
